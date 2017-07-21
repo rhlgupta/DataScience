@@ -15,17 +15,16 @@ import os
 import math
 import numpy as np
 import matplotlib.pyplot as plt
-get_ipython().magic('matplotlib inline')
 
 
 # ### Files
 
 # In[200]:
 
-globalPopulation = pd.read_csv('DataSets/gapminder.csv')
+globalPopulation = pd.read_csv('D:\GitHub\DataScience\Minor Projects\World_Population\gapminder.csv')
 
 Fileshape = globalPopulation.shape
-Filesize_KB = os.path.getsize('DataSets/gapminder.csv')/1024
+Filesize_KB = os.path.getsize('D:\GitHub\DataScience\Minor Projects\World_Population\gapminder.csv')/1024
 
 print(Fileshape)
 print("gapminder.csv: " + str(round(Filesize_KB,2)) + " KB")
